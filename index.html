@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="assets/fullpage.min.css">
+
+		<style>
+			body{
+				font-family: arial, helvetica;
+				color: #333;
+				color:rgba(0,0,0,0.5);
+			}
+
+			.section{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="myContainer">
+			<div class="section">
+				<div class="slide"><h1>Slide 1a</h1><p>top-left, the first slide that shows up</p></div>
+				<div class="slide"><h1>Slide 1b</h1><p>top-right</p></div>
+			</div>
+		<div class="section">
+				<div class="slide"><h1>Slide 2a</h1><p>bottom-left</p></div>
+				<div class="slide"><h1>Slide 2b</h1><p>bottom-right</p></div>
+			</div>
+		</div>
+
+		<script src="assets/fullpage.min.js"></script>
+		<script type="text/javascript">
+			new fullpage('#myContainer', {
+				sectionsColor: ['whitesmoke', 'lightblue'],
+				slidesNavigation: 'true',
+			});
+		</script>
+	</body>
+</html>
