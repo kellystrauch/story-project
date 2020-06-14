@@ -1,16 +1,51 @@
 <html>
 	<head>
+		<!-- Required meta tags for Bootstrap -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 		<link rel="stylesheet" href="assets/fullpage.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 
 		<style>
-			body{
+			body, a{
 				font-family: arial, helvetica;
 				color: #333;
-				color:rgba(0,0,0,0.5);
+				color: rgba(255, 255, 255, 0.9);
 			}
-
+			p{
+				margin-top: 30px;
+			}
 			.section{
 				text-align: center;
+			}
+			i.fa{
+				color: #ffcc33;
+				font-size: 60px;
+				margin-bottom: 20px;
+			}
+			img{
+				border: 3px solid rgba(255,255,255,0.8);
+			}
+			.gold-italic{
+				color: rgba(255, 204, 51, 0.9);
+				font-style: italic;
+			}
+			/*delays the actual fade until 3/4 through the animation*/
+			@keyframes fade-out-animation{
+				0%   {opacity: 1;}
+				75%  {opacity: 1;}
+				100% {opacity: 0.4;}
+			}
+			/*'forwards' maintains the faded out state after the 8s is complete*/
+			.fade-out{
+				animation: fade-out-animation 8s forwards;
+			}
+			a:hover{
+				color: #ffcc33;
+				text-decoration: none;
 			}
 		</style>
 	</head>
@@ -18,20 +53,260 @@
 
 		<div id="myContainer">
 			<div class="section">
-				<div class="slide"><h1>Slide 1a</h1><p>top-left, the first slide that shows up</p></div>
-				<div class="slide"><h1>Slide 1b</h1><p>top-right</p></div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-5 my-auto">
+							<i class="fa fa-magic animate__animated animate__swing" aria-hidden="true"></i>
+							<h1>
+								How to Design a<br>
+								Needlepoint Coaster
+							</h1>
+							<p>Making needlepoint coasters is fun, quick, and pretty easy!<br>
+							Let's walk through the simplest way to create a design.</p>
+						</div>
+						<div class="col-sm-5 my-auto">
+							<div class="row" style="margin-bottom: 30px;">
+								<div class="col-sm-4 my-auto">
+									<img src="images/destruct.jpg" width="180" alt="Staypuft Marshmallow Man needlepoint coaster">
+								</div>
+								<div class="col-sm-4 my-auto">
+									<img src="images/dr_mario.jpg" width="180" alt="Dr. Mario needlepoint coaster">
+								</div>
+								<div class="col-sm-4 my-auto">
+									<img src="images/eevee.jpg" width="180" alt="Eevee needlepoint coaster">
+								</div>
+							</div>
+							<div class="row" style="margin-bottom: 30px;">
+								<div class="col-sm-4 my-auto">
+									<img src="images/dalek.jpg" width="180" alt="Dalek needlepoint coaster">
+								</div>
+								<div class="col-sm-4 my-auto">
+									<img src="images/cat.jpg" width="180" alt="cat in sunglasses needlepoint coaster">
+								</div>
+								<div class="col-sm-4 my-auto">
+									<img src="images/overwatch.jpg" width="180" alt="Overwatch logo needlepoint coaster">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4 my-auto">
+									<img src="images/rick.jpg" width="180" alt="Rick & Morty needlepoint coaster">
+								</div>
+								<div class="col-sm-4 my-auto">
+									<img src="images/skull.jpg" width="180" alt="sugar skull needlepoint coaster">
+								</div>
+								<div class="col-sm-4 my-auto">
+									<img src="images/bee.jpg" width="180" alt="bee needlepoint coaster">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-1">
+						</div>
+					</div>
+				</div>
 			</div>
-		<div class="section">
-				<div class="slide"><h1>Slide 2a</h1><p>bottom-left</p></div>
-				<div class="slide"><h1>Slide 2b</h1><p>bottom-right</p></div>
+			<div class="section">
+				<div class="slide">
+					<div class="row">
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-5 my-auto">
+							<i class="fa fa-lightbulb-o" id="flash" aria-hidden="true"></i>
+							<h1>First, come up with an idea for the topic of your coaster.</h1>
+							<p>This can be just about anything you can think of -- your favorite animal, your favorite TV show, your favorite video game, and on and on.  Incidentally, characters from old Nintendo games make excellent needlepoint coasters, just in case that's your jam.</p>
+							<p>I've been on a fox kick lately, so let's create a fox coaster design!</p>
+						</div>
+						<div class="col-sm-5 my-auto">
+							<img src="https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib" alt="photo of a fox" height="600px">
+						</div>
+						<div class="col-sm-1">
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="section">
+				<div class="slide">
+					<div class="row">
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-5 my-auto">
+							<i class="fa fa-search" id="flipping" aria-hidden="true"></i>
+							<h1>Next, search Google Images for pixel art of your chosen topic.</h1>
+							<p>For my fox design, I tried searching "pixel fox" and "pixel art fox."  You can see four contenders for my coaster design (from those image searches) to the right.</p>
+							<p>If you happened to choose a character from an old Nintendo game, replace the phrase "pixel art" in your search with the phrase "8 bit" instead -- for example, "8 bit Mario".</p>
+						</div>
+						<div class="col-sm-5 my-auto">
+							<div class="row">
+								<div class="col-6">
+									<img src="images/fox1.png" height="182" alt="search result for fox pixel art">
+								</div>
+								<div class="col-6">
+									<img src="images/fox3.png" height="182" alt="search result for fox pixel art" style="background-color: white;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									(1)
+								</div>
+								<div class="col-6">
+									(2)
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<img src="images/fox4.png" height="182" alt="search result for fox pixel art" style="margin-top: 50px; background-color: white;">
+								</div>
+								<div class="col-6">
+									<img src="images/fox2.png" height="182" alt="search result for fox pixel art" style="margin-top: 50px;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									(3)
+								</div>
+								<div class="col-6">
+									(4)
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide">
+					<div class="row">
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-5 my-auto">
+							<i class="fa fa-arrows" id="rubberband" aria-hidden="true"></i>
+							<h1>Now, count how many blocks tall and wide each option is.</h1>
+							<p>Ideally, your design should be somewhere <b>between 20 and 26 blocks wide and tall</b>.  I never go any wider or taller than 26 blocks, since I buy pre-cut canvases for designs 26 stitches x 26 stitches (not including the border).  That said, I don't always use the full 26 x 26.  You can always cut the canvas down a bit if needed -- as small as 22 x 22 is still a great coaster size. (And if you <em>really</em> love a tiny piece of pixel art you found, you can always pad small designs with a bunch of background to make them work.)</p>
+							<p>Looking at the "dimensions" of our options, Option (4) falls right in the perfect range, and it just happens to be my favorite anyway!  Let's proceed with Option (4).</p>
+						</div>
+						<div class="col-sm-5 my-auto">
+							<div class="row">
+								<div class="col-6 add-fade-out">
+									<img src="images/fox1.png" height="182" alt="search result for fox pixel art">
+								</div>
+								<div class="col-6 add-fade-out">
+									<img src="images/fox3.png" height="182" alt="search result for fox pixel art" style="background-color: white;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									(1) - 17 wide x 18 tall<br>
+									<span class="gold-italic">a little small</span>
+								</div>
+								<div class="col-6">
+									(2) - 38 wide x 32 tall<br>
+									<span class="gold-italic">too big</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 add-fade-out">
+									<img src="images/fox4.png" height="182" alt="search result for fox pixel art" style="margin-top: 50px; background-color: white;">
+								</div>
+								<div class="col-6">
+									<img src="images/fox2.png" height="182" alt="search result for fox pixel art" style="margin-top: 50px;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									(3) - 15 wide x 13 tall<br>
+									<span class="gold-italic">too small</span>
+								</div>
+								<div class="col-6">
+									(4) - 23 wide x 22 tall<br>
+									<span class="gold-italic">just right!</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide">
+					<div class="row">
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-5 my-auto">
+							<i class="fa fa-paint-brush" id="swing" aria-hidden="true"></i>
+							<h1>Next, head over to <a href="https://pixilart.com/draw" target="_blank">pixilart.com/draw</a></h1>
+							<p>It may seem silly to redraw your entire design on a Pixel Art site, but that's always what I do next!  This will allow you to decide exactly what size your canvas should be, position (e.g. center) your design as you see fit, and choose the perfect background color.  It will be too late to make those decisions once you start sewing, so get them figured out now.</p>
+							<p>I always start with a drawing that's 28 x 28 blocks -- perfect for a canvas that holds 26 stitches x 26 stitches + a border.  (If you don't want a border that stands out like the one I mocked up here, just make it the same color as your background.)</p>
+						</div>
+						<div class="col-sm-5 my-auto">
+							<div class="row">
+								<div class="col-12">
+									<img src="images/chosen_fox_grid.png" width="225" alt="chosen fox image on grid">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<img src="images/chosen_fox_purple.png" width="225" alt="chosen fox image with background" style="margin-top: 50px; background-color: white;">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide">
+					<div class="row">
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-5 my-auto">
+							<i class="fa fa-shopping-cart" id="bounce" aria-hidden="true"></i>
+							<h1>Your design is ready!  Go shopping, and start sewing.</h1>
+							<p>As mentioned, you can buy 26 x 26 plastic canvases that work great for this.  You'll also need yarn for each color in your design, plus a needle large enough to handle that yarn.</p>
+							<p>The "sewing" part is not difficult at all.  There are plenty of YouTube videos that will start you on your way if you've never tried needlepoint before, but rest assured -- this is a craft suitable for children, so you'll be fine. :)</i></p>
+						</div>
+						<div class="col-sm-5 my-auto">
+							<img src="images/final.jpg" width="400" alt="fox needlepoint coaster">
+						</div>
+						<div class="col-sm-1">
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 		<script src="assets/fullpage.min.js"></script>
 		<script type="text/javascript">
 			new fullpage('#myContainer', {
-				sectionsColor: ['whitesmoke', 'lightblue'],
+				sectionsColor: ['#3b2e2a', '#533747', '#5f506b', '#6a6b83', '#76949f', '#86bbbd'],
 				slidesNavigation: 'true',
+				afterLoad: function(origin, destination, direction){
+					var loadedSection = this;
+
+					if(destination.index == 1){
+						$("#flash").addClass("animate__animated animate__flash");
+					}
+					if(destination.index == 2){
+						$("#flipping").addClass("animate__animated animate__flip");
+					}
+					if(destination.index == 3){
+						$("#rubberband").addClass("animate__animated animate__rubberband");
+						$(".add-fade-out").addClass("fade-out");
+					}
+					if(destination.index == 4){
+						$("#swing").addClass("animate__animated animate__swing");
+					}
+					if(destination.index == 5){
+						$("#bounce").addClass("animate__animated animate__bounce");
+					}
+				}
 			});
 		</script>
 	</body>
